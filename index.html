@@ -4,12 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script defer src="script.js"></script>
+    <title>Princípios metodológicos de programação</title>
+
 </head>
-<body>
+<body class="light-mode">
+    <header>
+        <button id="mode-toggle">Light/Dark Mode</button>
+    </header>
+   
     <h1>Princípios metodológicos de programação</h1><br><br>
+    <div class="imagem-container">
+        <img src="./Imagens/1º imagem.jpg" alt="img">
+      </div>
+    <!-- <img src="./Imagens/1º imagem.jpg">  -->
     
+    <br>
+<h2>Tipos de metodologias </h2>
+<h3>Na programação, existem várias metodologias que orientam a maneira como os desenvolvedores abordam o processo de desenvolvimento de software. 
+    Cada metodologia tem as suas próprias práticas, princípios e abordagens para planejar, estruturar e controlar o processo de desenvolvimento. 
+<br><br>Tipos de metodologias na programação:<br><br>
+    
+Cascata (Waterfall):</h3><ul>
+    <h4><li>Abordagem linear e sequencial. </li><br>
+    <li>As fases do desenvolvimento ocorrem em uma ordem fixa: requisitos, design, implementação, testes, implantação e manutenção.</li> <br>
+    <li>Cada fase deve ser concluída antes de passar para a próxima.</li><br></ul></h4>
+    
+<h3>Modelo em V:</h3><ul>
+    <li>Baseado no modelo cascata, mas com testes associados a cada fase de desenvolvimento.</li><br>
+    <li>As fases de desenvolvimento e testes são representadas como uma forma de "V".</li><br></ul>
 
+<h3>Prototipagem Rápida: </h3><ul>
+    <h4><li>Enfoca a criação rápida de protótipos para entender os requisitos do cliente.</li><br>
+    <li>O protótipo é refinado iterativamente com base no feedback do cliente até que os requisitos estejam claros.</li></ul>
 
+<h3>Desenvolvimento Iterativo e Incremental:</h3> <ul>
+    <h4></h4><li>Divide o projeto em pequenas partes.</li>
+    <li>Desenvolvimento é feito em iterações, com cada iteração adicionando novas funcionalidades ou refinando as existentes.</li></ul>
+
+<h3>Scrum: </h3><ul>
+    <li>Um framework ágil que enfatiza o desenvolvimento iterativo e incremental.</li>
+    <li>Divide o projeto em sprints, normalmente de 2 a 4 semanas.</li>
+    <li>Papéis definidos, como Scrum Master, Product Owner e Equipe de Desenvolvimento. </li></ul>
+
+<h3>Kanban: </h3><ul>
+    <li>Método visual para gerenciar o trabalho.</li>
+    <li> um quadro Kanban para visualizar o fluxo de trabalho, com tarefas movendo-se através de colunas que representam diferentes estágios. </li></ul>
+
+<h3>XP (Extreme Programming):</h3><ul>
+    <li>Foca em práticas de desenvolvimento de software de alta qualidade.</li>
+    <li> Práticas incluem desenvolvimento orientado a testes (TDD), programação em pares, integração contínua e releases frequentes.</li> </ul>
+
+<h3>DevOps:</h3><ul>
+    <li>Combinação de desenvolvimento (Dev) e operações (Ops).</li>
+    <li>Enfatiza a colaboração e comunicação entre desenvolvedores e operadores para melhorar a eficiência e a velocidade do desenvolvimento e entrega de software.</li></ul>
+
+<h3>Lean Development:</h3>
+    <li>Baseado nos princípios do Lean Manufacturing.</li>
+    <li>Busca eliminar desperdícios, melhorar a eficiência e entregar o máximo valor ao cliente.</li> <div style="height: 20px;"></div>
+
+<h2>Operações sobre Conjuntos </h2>
+
+<h3>Os conjuntos são frequentemente representados por estruturas de dados que permitem a manipulação de coleções de elementos. 
+As operações sobre conjuntos em programação envolvem diversas ações, e os princípios metodológicos referem-se à abordagem sistemática para lidar com essas operações.
+<br>Princípios metodológicos relacionados a operações sobre conjuntos:<br><br>
+
+<h3>Declaratividade:</h3><ul>
+    <li>Expressar as operações sobre conjuntos de maneira declarativa, descrevendo o que deve ser feito, em vez de como deve ser feito. Isso geralmente leva a um código mais claro e compreensível.</li></ul>
+
+<h3>Reusabilidade:</h3><ul>
+    <li>Projetar operações sobre conjuntos de forma modular para que possam ser reutilizadas em diferentes partes do código. Isso promove a manutenção eficiente e evita a duplicação de código.</ul>
+
+<h3>Eficiência:</h3><ul>
+    <li>Escolher algoritmos eficientes para as operações sobre conjuntos, especialmente se os conjuntos forem grandes. Algoritmos otimizados contribuem para o desempenho geral do programa.</li></ul>
+
+<h3>Tratamento de Exceções:</h3>
+    Implementar tratamento adequado para situações excepcionais, como conjuntos vazios ou condições inesperadas durante operações sobre conjuntos. Isso contribui para a robustez do código.</li></ul>
+
+<h3>Validação de Dados:</h3><ul>
+<li>Validar os dados de entrada antes de realizar operações sobre conjuntos para garantir que estejam corretos e consistentes. Isso ajuda a evitar erros e comportamentos inesperados.</li></ul>
+
+<h3>Abstração:</h3><ul>
+<li>Abstrair a implementação específica das operações sobre conjuntos, fornecendo interfaces ou API que ocultem detalhes internos. Isso facilita a compreensão e o uso do código.</li></ul>
+
+<h3>Segurança:</h3><ul>
+<li>Garantir que as operações sobre conjuntos sejam seguras contra vulnerabilidades, como estouro de buffer, vazamento de memória e outros problemas de segurança. Isso é especialmente importante em ambientes onde a segurança é crítica.</li></ul>
+
+<h3>Tratamento de Concorrência:</h3><ul>
+<li>Se o código que envolve operações sobre conjuntos for executado em ambientes concorrentes, garantir que seja tratada a concorrência de maneira adequada para evitar condições de corrida e outros problemas relacionados à concorrência.</li></ul>
+
+<h3>Testes Adequados:</h3><ul>
+<li>Desenvolver casos de teste abrangentes para validar as operações sobre conjuntos em diferentes cenários. Os testes devem cobrir casos normais, limites e situações excepcionais.</li></ul>
+
+<h3>Documentação Clara:</h3><ul>
+<li>Fornecer documentação clara para as operações sobre conjuntos, incluindo descrições de entrada e saída, requisitos, e exemplos de uso. Isso facilita a integração e o entendimento por parte de outros desenvolvedores.</li></ul>
+
+<br> Referências: <a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/788"> Catálogo Nacional de Qualificações</a><br>
+Lara Pires <br>
+PI1 
 </body>
 </html>
