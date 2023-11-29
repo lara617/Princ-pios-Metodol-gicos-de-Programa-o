@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Princípios metodológicos de programação</title>
 
 </head>
@@ -12,6 +13,7 @@
     <header>
         <button id="mode-toggle">Light/Dark Mode</button>
     </header>
+    
    
     <h1>Princípios metodológicos de programação</h1><br><br>
     <div class="imagem-container">
@@ -20,87 +22,225 @@
     <!-- <img src="./Imagens/1º imagem.jpg">  -->
     
     <br>
-<h2>Tipos de metodologias </h2>
+<h1>-Metodologias em programação local <br>
+    Tipos de metodologias </h1>
 <h3>Na programação, existem várias metodologias que orientam a maneira como os desenvolvedores abordam o processo de desenvolvimento de software. 
-    Cada metodologia tem as suas próprias práticas, princípios e abordagens para planejar, estruturar e controlar o processo de desenvolvimento. 
-<br><br>Tipos de metodologias na programação:<br><br>
+    Cada metodologia tem as suas próprias práticas, princípios e abordagens para planejar, estruturar e controlar o processo de desenvolvimento.</h3> 
+    <!--<img src="/Imagens/Tipos-de-Metodologia.png" width="600"> -->
+    <div class="imagem1-container">
+        <img src="/Imagens/Tipos-de-Metodologia.png" alt="Sua Imagem" class="hover-zoom" width="400">
+<br><br><h2>Tipos de metodologias na programação:<br><br>
     
-Cascata (Waterfall):</h3><ul>
+Cascata (Waterfall):</h2><ul>
     <h4><li>Abordagem linear e sequencial. </li><br>
     <li>As fases do desenvolvimento ocorrem em uma ordem fixa: requisitos, design, implementação, testes, implantação e manutenção.</li> <br>
     <li>Cada fase deve ser concluída antes de passar para a próxima.</li><br></ul></h4>
     
-<h3>Modelo em V:</h3><ul>
-    <li>Baseado no modelo cascata, mas com testes associados a cada fase de desenvolvimento.</li><br>
-    <li>As fases de desenvolvimento e testes são representadas como uma forma de "V".</li><br></ul>
+<h2>Modelo em V:</h2><ul>
+    <h4><li>Baseado no modelo cascata, mas com testes associados a cada fase de desenvolvimento.</li><br>
+    <li>As fases de desenvolvimento e testes são representadas como uma forma de "V".</li><br></ul></h4>
 
-<h3>Prototipagem Rápida: </h3><ul>
+<h2>Prototipagem Rápida: </h2><ul>
     <h4><li>Enfoca a criação rápida de protótipos para entender os requisitos do cliente.</li><br>
     <li>O protótipo é refinado iterativamente com base no feedback do cliente até que os requisitos estejam claros.</li></ul>
 
-<h3>Desenvolvimento Iterativo e Incremental:</h3> <ul>
-    <h4></h4><li>Divide o projeto em pequenas partes.</li>
-    <li>Desenvolvimento é feito em iterações, com cada iteração adicionando novas funcionalidades ou refinando as existentes.</li></ul>
+<h2>Desenvolvimento Iterativo e Incremental:</h2> <ul>
+    <h4><li>Divide o projeto em pequenas partes.</li>
+    <li>Desenvolvimento é feito em iterações, com cada iteração adicionando novas funcionalidades ou refinando as existentes.</li></ul></h4>
 
-<h3>Scrum: </h3><ul>
-    <li>Um framework ágil que enfatiza o desenvolvimento iterativo e incremental.</li>
+<h2>Scrum: </h2><ul>
+    <h4><li>Um framework ágil que enfatiza o desenvolvimento iterativo e incremental.</li>
     <li>Divide o projeto em sprints, normalmente de 2 a 4 semanas.</li>
-    <li>Papéis definidos, como Scrum Master, Product Owner e Equipe de Desenvolvimento. </li></ul>
+    <li>Papéis definidos, como Scrum Master, Product Owner e Equipe de Desenvolvimento. </li></ul></h4>
 
-<h3>Kanban: </h3><ul>
-    <li>Método visual para gerenciar o trabalho.</li>
-    <li> um quadro Kanban para visualizar o fluxo de trabalho, com tarefas movendo-se através de colunas que representam diferentes estágios. </li></ul>
+<h2>Kanban: </h2><ul>
+    <h4><li>Método visual para gerenciar o trabalho.</li>
+    <li> um quadro Kanban para visualizar o fluxo de trabalho, com tarefas movendo-se através de colunas que representam diferentes estágios. </li></ul></h4>
 
-<h3>XP (Extreme Programming):</h3><ul>
-    <li>Foca em práticas de desenvolvimento de software de alta qualidade.</li>
-    <li> Práticas incluem desenvolvimento orientado a testes (TDD), programação em pares, integração contínua e releases frequentes.</li> </ul>
+<h2>XP (Extreme Programming):</h2><ul>
+    <h4><li>Foca em práticas de desenvolvimento de software de alta qualidade.</li>
+    <li> Práticas incluem desenvolvimento orientado a testes (TDD), programação em pares, integração contínua e releases frequentes.</li> </ul></h4>
 
-<h3>DevOps:</h3><ul>
-    <li>Combinação de desenvolvimento (Dev) e operações (Ops).</li>
-    <li>Enfatiza a colaboração e comunicação entre desenvolvedores e operadores para melhorar a eficiência e a velocidade do desenvolvimento e entrega de software.</li></ul>
+<h2>DevOps:</h2><ul>
+    <h4><li>Combinação de desenvolvimento (Dev) e operações (Ops).</li>
+    <li>Enfatiza a colaboração e comunicação entre desenvolvedores e operadores para melhorar a eficiência e a velocidade do desenvolvimento e entrega de software.</li></ul></h4>
 
-<h3>Lean Development:</h3>
-    <li>Baseado nos princípios do Lean Manufacturing.</li>
-    <li>Busca eliminar desperdícios, melhorar a eficiência e entregar o máximo valor ao cliente.</li> <div style="height: 20px;"></div>
+<h2>Lean Development:</h2>
+<h4><li>Baseado nos princípios do Lean Manufacturing.</li>
+    <li>Busca eliminar desperdícios, melhorar a eficiência e entregar o máximo valor ao cliente.</li></h4> <div style="height: 20px;"></div>
 
-<h2>Operações sobre Conjuntos </h2>
-
+<h1>-Princípios do método <br>
+    Operações sobre Conjuntos </h1>
+    <div class="imagem1-container">
+        <img src="/Imagens/Principio-do-metodo.png" alt="Sua Imagem" class="hover-zoom" width="400">
+      </div>
+<!-- <img src="/Imagens/Principio-do-metodo.png" width="600"> -->
 <h3>Os conjuntos são frequentemente representados por estruturas de dados que permitem a manipulação de coleções de elementos. 
 As operações sobre conjuntos em programação envolvem diversas ações, e os princípios metodológicos referem-se à abordagem sistemática para lidar com essas operações.
-<br>Princípios metodológicos relacionados a operações sobre conjuntos:<br><br>
+</h3><br><h2>Princípios metodológicos relacionados a operações sobre conjuntos:<br><br>
 
-<h3>Declaratividade:</h3><ul>
-    <li>Expressar as operações sobre conjuntos de maneira declarativa, descrevendo o que deve ser feito, em vez de como deve ser feito. Isso geralmente leva a um código mais claro e compreensível.</li></ul>
+Declaratividade:<ul></h2>
+    <h4><li>Expressar as operações sobre conjuntos de maneira declarativa, descrevendo o que deve ser feito, em vez de como deve ser feito. Isso geralmente leva a um código mais claro e compreensível.</li></ul></h4>
 
-<h3>Reusabilidade:</h3><ul>
-    <li>Projetar operações sobre conjuntos de forma modular para que possam ser reutilizadas em diferentes partes do código. Isso promove a manutenção eficiente e evita a duplicação de código.</ul>
+<h2>Reusabilidade:</h2><ul>
+    <h4><li>Projetar operações sobre conjuntos de forma modular para que possam ser reutilizadas em diferentes partes do código. Isso promove a manutenção eficiente e evita a duplicação de código.</ul></h4>
 
-<h3>Eficiência:</h3><ul>
-    <li>Escolher algoritmos eficientes para as operações sobre conjuntos, especialmente se os conjuntos forem grandes. Algoritmos otimizados contribuem para o desempenho geral do programa.</li></ul>
+<h2>Eficiência:</h2><ul>
+    <h4><li>Escolher algoritmos eficientes para as operações sobre conjuntos, especialmente se os conjuntos forem grandes. Algoritmos otimizados contribuem para o desempenho geral do programa.</li></ul></h4>
 
-<h3>Tratamento de Exceções:</h3>
-    Implementar tratamento adequado para situações excepcionais, como conjuntos vazios ou condições inesperadas durante operações sobre conjuntos. Isso contribui para a robustez do código.</li></ul>
+<h2>Tratamento de Exceções:</h2><ul>
+    <li>Implementar tratamento adequado para situações excepcionais, como conjuntos vazios ou condições inesperadas durante operações sobre conjuntos. Isso contribui para a robustez do código.</li></ul>
 
-<h3>Validação de Dados:</h3><ul>
-<li>Validar os dados de entrada antes de realizar operações sobre conjuntos para garantir que estejam corretos e consistentes. Isso ajuda a evitar erros e comportamentos inesperados.</li></ul>
+<h2>Validação de Dados:</h2><ul>
+    <h4><li>Validar os dados de entrada antes de realizar operações sobre conjuntos para garantir que estejam corretos e consistentes. Isso ajuda a evitar erros e comportamentos inesperados.</li></ul></h4>
 
-<h3>Abstração:</h3><ul>
-<li>Abstrair a implementação específica das operações sobre conjuntos, fornecendo interfaces ou API que ocultem detalhes internos. Isso facilita a compreensão e o uso do código.</li></ul>
+<h2>Abstração:</h2><ul>
+    <h4><li>Abstrair a implementação específica das operações sobre conjuntos, fornecendo interfaces ou API que ocultem detalhes internos. Isso facilita a compreensão e o uso do código.</li></ul></h4>
 
-<h3>Segurança:</h3><ul>
-<li>Garantir que as operações sobre conjuntos sejam seguras contra vulnerabilidades, como estouro de buffer, vazamento de memória e outros problemas de segurança. Isso é especialmente importante em ambientes onde a segurança é crítica.</li></ul>
+<h2>Segurança:</h2><ul>
+    <h4><li>Garantir que as operações sobre conjuntos sejam seguras contra vulnerabilidades, como estouro de buffer, vazamento de memória e outros problemas de segurança. Isso é especialmente importante em ambientes onde a segurança é crítica.</li></ul></h4>
 
-<h3>Tratamento de Concorrência:</h3><ul>
-<li>Se o código que envolve operações sobre conjuntos for executado em ambientes concorrentes, garantir que seja tratada a concorrência de maneira adequada para evitar condições de corrida e outros problemas relacionados à concorrência.</li></ul>
+<h2>Tratamento de Concorrência:</h2><ul>
+        <h4><li>Se o código que envolve operações sobre conjuntos for executado em ambientes concorrentes, garantir que seja tratada a concorrência de maneira adequada para evitar condições de corrida e outros problemas relacionados à concorrência.</li></ul></h4>
 
-<h3>Testes Adequados:</h3><ul>
-<li>Desenvolver casos de teste abrangentes para validar as operações sobre conjuntos em diferentes cenários. Os testes devem cobrir casos normais, limites e situações excepcionais.</li></ul>
+<h2>Testes Adequados:</h2><ul>
+    <h4><li>Desenvolver casos de teste abrangentes para validar as operações sobre conjuntos em diferentes cenários. Os testes devem cobrir casos normais, limites e situações excepcionais.</li></ul></h4>
 
-<h3>Documentação Clara:</h3><ul>
-<li>Fornecer documentação clara para as operações sobre conjuntos, incluindo descrições de entrada e saída, requisitos, e exemplos de uso. Isso facilita a integração e o entendimento por parte de outros desenvolvedores.</li></ul>
+<h2>Documentação Clara:</h2><ul>
+    <h4><li>Fornecer documentação clara para as operações sobre conjuntos, incluindo descrições de entrada e saída, requisitos, e exemplos de uso. Isso facilita a integração e o entendimento por parte de outros desenvolvedores.</li></ul></h4>
 
-<br> Referências: <a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/788"> Catálogo Nacional de Qualificações</a><br>
+    <div style="height: 20px;"></div>
+
+<h1>-Estrutura de um programa<br>
+    Sequência das instruções nos procedimentos
+</h1>
+
+<h3>A estrutura de um programa pode variar dependendo da linguagem de programação utilizada. Linguagens específicas podem ter diferenças, mas os conceitos gerais são
+     aplicáveis.</h3><br>
+
+<!--<img src="/Imagens/Estrutura-de-um-programa.png" width="400">-->
+<div class="imagem1-container">
+    <img src="/Imagens/Estrutura-de-um-programa.png" alt="Sua Imagem" class="hover-zoom" width="400">
+
+     <h2>Uma visão geral da sequência comum de instruções nos procedimentos em muitas linguagens de programação estruturada
+
+Declaração de Bibliotecas/Importação de Módulos:</h2><ul>
+    <h4><li>Muitas linguagens requerem que você declare as bibliotecas ou importe módulos necessários para o seu programa. Isso é feito no início do programa.</li></ul></h4>
+     
+<h2>Declaração de Variáveis e Constantes:</h2><ul>
+    <h4><li>As variáveis e constantes necessárias para o programa são declaradas nessa seção. Isso pode incluir a definição do tipo de dado e, em alguns casos, a atribuição de valores iniciais.</li></ul></h4>
+     
+<h2>Definição de Procedimentos e Funções:</h2><ul>
+    <h4><li>Aqui, você define os procedimentos e funções que serão utilizados no programa. Em algumas linguagens, isso pode incluir a assinatura da função (parâmetros e tipo de retorno).</li></ul></h4>
+     
+<h2>Procedimento Principal (main):</h2><ul>
+    <h4><li>A execução do programa geralmente começa no procedimento principal (por exemplo, main). Aqui, você especifica as instruções que serão executadas quando o programa começar a rodar.</li></ul></h4>
+     
+<h2>Entrada de Dados (Input):</h2><ul>
+    <h4><li>Se o programa precisa receber dados do usuário ou de outra fonte, esta é a seção onde esses dados são lidos ou recebidos.</li></ul></h4>
+     
+<h2>Processamento de Dados:</h2><ul>
+    <h4><li>Aqui ocorre o processamento principal do programa. Isso envolve a execução de cálculos, tomada de decisões, e outras operações necessárias para atingir os objetivos do programa.</li></ul></h4>
+     
+<h2>Saída de Dados (Output):</h2><ul>
+    <h4><li>Após o processamento, o programa pode exibir os resultados ou produzir saídas para o usuário ou para outros sistemas.</li></ul></h4>
+     
+<h2>Controle de Fluxo:</h2><ul>
+    <h4><li>Instruções de controle de fluxo, como condicionais (if, else) e loops (for, while), são utilizadas para controlar o fluxo de execução do programa.</li></ul></h4>
+     
+<h2>Liberação de Recursos:</h2><ul>
+    <h4><li>Em linguagens que gerenciam recursos explicitamente, como a memória, pode ser necessário liberar recursos alocados durante a execução do programa.</li></ul></h4>
+     
+<h2>Encerramento do Programa:</h2><ul>
+    <h4><li>O programa é encerrado, e quaisquer procedimentos finais são executados.</li></ul></h4>
+
+<div style="height: 20px;"></div>
+
+<h1>-Corpo do programa <br>
+Desenvolvimento da sequência</h1>
+
+<h3>O "corpo" do programa de um computador refere-se à parte principal onde as instruções são escritas para realizar tarefas específicas. 
+O desenvolvimento da sequência no corpo do programa refere-se à ordenação e estruturação das instruções para garantir que o programa atinja seus objetivos 
+de maneira lógica e eficiente. A sequência de desenvolvimento pode variar com base na lógica do programa.</h3>
+<!-- <img src="/Imagens/corpo-do-programa.png" width="400">-->
+<div class="imagem1-container">
+    <img src="/Imagens/corpo-do-programa.png" alt="Sua Imagem" class="hover-zoom" width="400">
+
+<h2>Elementos comuns
+
+Declaração de Variáveis e Constantes:</h2><ul>
+    <h4><li>Antes de usar variáveis, elas geralmente precisam de ser declaradas. As constantes, se houver, também podem ser definidas nesta fase.</li></ul></h4>
+
+<h2>Entrada de Dados:</h2><ul>
+    <h4><li>Se o programa requer entrada de dados do usuário ou de uma fonte externa, esta é a fase em que esses dados são lidos e armazenados em variáveis.</li></ul></h4>
+
+<h2>Processamento de Dados:</h2><ul>
+    <h4><li>Esta é a parte central do programa, onde os cálculos e as operações necessárias para atingir os objetivos do programa são realizados. Isso pode envolver estruturas de controle de fluxo, como condicionais (if, else) e loops (for, while).</li></ul></h4>
+
+<h2>Saída de Dados:</h2><ul>
+    <h4><li>Após o processamento, os resultados podem ser exibidos na tela, salvos em um arquivo ou enviados para outro sistema. Esta fase cuida da apresentação ou armazenamento dos resultados.</li></ul></h4>
+
+<h2>Manipulação de Erros (se necessário):</h2><ul>
+    <h4><li>Inclui instruções para lidar com erros ou exceções é uma prática importante para tornar o programa mais robusto. Isso pode envolver a implementação de blocos try-catch, por exemplo.</li></ul></h4>
+
+<h2>Liberação de Recursos (se necessário):</h2><ul>
+    <h4><li>Se o programa alocou recursos durante a execução, como memória, é importante liberar esses recursos adequadamente para evitar vazamentos de memória ou outros problemas.</li></ul></h4>
+
+<h2>Controle de Fluxo Adicional (se necessário):</h2><ul>
+    <h4><li>Dependendo da lógica do programa, pode ser necessário adicionar instruções adicionais de controle de fluxo para lidar com casos especiais ou condições específicas.</li></ul></h4>
+
+<h2>Encerramento do Programa:</h2><ul>
+    <h4><li>O programa deve ser encerrado de maneira adequada, finalizando qualquer operação pendente e liberando recursos restantes.</li></ul></h4>
+
+<div style="height: 20px;"></div>
+
+<h1>-Dicionário de dados
+    <br> Dicionário de dados em programação</h1>
+
+<h3>Um Dicionário de Dados (DD) em programação é uma documentação detalhada que descreve a estrutura, definições e características dos dados usados em um 
+    sistema de software. Ele serve como uma fonte centralizada de informações sobre o esquema de dados, ajudando os desenvolvedores, analistas de dados e outros 
+    profissionais envolvidos a compreenderem e a trabalharem com os dados de forma consistente.</h3>
+<!--<img src="/Imagens/dicionario-dado.png" width="400">-->
+<div class="imagem1-container">
+    <img src="/Imagens/dicionario-dado.png" alt="Sua Imagem" class="hover-zoom" width="400">
+
+<h2>Elementos típicos que podem ser encontrados em um Dicionário de Dados:
+
+<h2>Nomes e Descrições de Campos:</h2><ul>
+    <h4><li>Identifica os nomes dos campos ou atributos usados nas estruturas de dados. Inclui descrições que explicam o propósito e o conteúdo de cada campo.</li></ul></h4>
+
+<h2>Tipos de Dados:</h2><ul>
+    <h4><li>Especifica o tipo de dado que cada campo pode armazenar (por exemplo, inteiro, string, data, etc.).</li></ul></h4>
+
+<h2>Comprimento e Precisão:</h2><ul>
+    <h4><li>Define o comprimento máximo de caracteres ou a precisão numérica para campos específicos.</li></ul></h4>
+
+<h2>Restrições e Validações:</h2><ul>
+    <h4><li>Indica quaisquer restrições ou validações aplicadas aos dados, como valores mínimos ou máximos, formatos específicos, etc.</li></ul></h4>
+
+<h2>Relacionamentos entre Tabelas:</h2><ul>
+    <h4><li>Descreve os relacionamentos entre diferentes tabelas ou estruturas de dados no sistema.</li></ul></h4>
+
+<h2>Chaves Primárias e Chaves Estrangeiras:</h2><ul>
+    <h4><li>Identifica as chaves primárias que identificam exclusivamente os registros em uma tabela e as chaves estrangeiras que estabelecem relações entre tabelas.</li></ul></h4>
+
+<h2>Regras de Negócios Relacionadas a Dados:</h2><ul>
+    <h4><li>Inclui regras de negócios específicas relacionadas aos dados, como cálculos derivados, condições especiais, etc.</li></ul></h4>
+
+<h2>Metadados:</h2><ul>
+    <h4><li>Pode incluir informações sobre quando o campo foi adicionado, modificado pela última vez, ou outras informações relacionadas ao ciclo de vida dos dados.</li></ul></h4>
+
+<h2>Procedimentos Armazenados e Funções:</h2><ul>
+    <h4><li>Quando aplicável, pode documentar procedimentos armazenados, funções ou outras lógicas relacionadas aos dados no banco de dados.</li></ul></h4>
+
+<h2>Histórico de Alterações:</h2><ul>
+    <h4><li>Mantém um registro de todas as alterações feitas no dicionário de dados ao longo do tempo.</li></ul></h4>
+
+<br> Referências: <br><a href="https://catalogo.anqep.gov.pt/ufcdDetalhe/788"> Catálogo Nacional de Qualificações</a><br>
+<a href="https://chat.openai.com/share/5802a1ef-ac73-41a0-ad93-ae58790a90e2"> Tipos de Metodologias em Programação</a><br>
+<a href="https://chat.openai.com/share/3d81e6d7-0b8b-4fea-88b0-3afc55a61f8e"> Light/Dark Mode</a> <br><br>
 Lara Pires <br>
 PI1 
+
 </body>
 </html>
